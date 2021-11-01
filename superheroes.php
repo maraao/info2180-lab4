@@ -74,3 +74,18 @@ $superheroes = [
 <?php
     header('Access-Control-Allow-Origin: *');
 ?>
+
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    dump($_POST);
+
+    $hero = filter_input(INPUT_POST, 'hero', FILTER_SANITIZE_STRING);
+
+    if (empty($hero)){
+        echo 'Place empty</br/>';
+    }
+}
+
+?>

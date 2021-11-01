@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers Character Search</title>
-    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Avengers Character Search</h1>
-        <button type="button" id="searchBtn" class="btn">Search</button>
-        
-    </div>
+    <header>
+        <div class="container">
+            <h1>AVENGERS CHARACTER SEARCH</h1>
+        </div>
+    </header>
+    <main>
+        <div class="data">
+            <p>Search by Full Name or Alias</p>
+
+            <form id="myform" action="superheroes.php" method="post">
+                <div class="form-group">
+                    <input type="text" id="hero" placeholder="e.g. Captain America or Steve Rogers">         
+                </div>
+                <button type="button" id="searchBtn" class="btn">Search</button>
+        </form>
+        </div>
+        <div class="result">
+            <h2>RESULT</h2>
+            <hr>
+            <p>Test</p>
+        </div>
+    </main>
+
 </body>
 </html>
